@@ -1,7 +1,7 @@
 const MAX_LOGIN_ATTEMPTS = 5;
-const LOCKOUT_DURATION_MS = 15 * 60 * 1000;
-const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
-const RATE_LIMIT_MAX_REQUESTS = 10;
+const LOCKOUT_DURATION_MS = 5 * 60 * 1000;
+const RATE_LIMIT_WINDOW_MS = 5 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 20;
 
 const loginAttempts = new Map();
 const requestBuckets = new Map();
